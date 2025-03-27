@@ -3,8 +3,6 @@
 namespace KiranoDev\LaravelApply\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use KiranoDev\laravelApply\Base\Appliable;
-use KiranoDev\LaravelApply\Observers\ApplyObserver;
 
 class LaravelApplyServiceProvider extends ServiceProvider
 {
@@ -26,7 +24,5 @@ class LaravelApplyServiceProvider extends ServiceProvider
         );
 
         if ( ! defined('CURL_SSLVERSION_TLSv1_2')) { define('CURL_SSLVERSION_TLSv1_2', 6); }
-
-        Appliable::observe(ApplyObserver::class);
     }
 }

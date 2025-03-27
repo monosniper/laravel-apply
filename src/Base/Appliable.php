@@ -7,9 +7,23 @@ use KiranoDev\LaravelApply\Contracts\CanBeApply;
 use KiranoDev\laravelApply\DataTransferObjects\ApplyData;
 use KiranoDev\LaravelApply\Enums\Via;
 use KiranoDev\LaravelApply\Helpers\Formatter;
+use KiranoDev\LaravelApply\Services\Social\Log;
+use KiranoDev\LaravelApply\Services\Social\Mail;
+use KiranoDev\LaravelApply\Services\Social\Telegram;
 
 class Appliable extends Model implements CanBeApply
 {
+    protected static function booted(): void
+    {
+        static::created(function (Appliable $appliable) {
+            (match($appliable->via()) {
+                Via::TELEGRAM => Telegram::class,
+                Via::MAIL => Mail::class,
+                Via::LOG => Log::class,
+            })::send($appliable);
+        });
+    }
+
     public function getApplyData(): ApplyData
     {
         return new ApplyData(
