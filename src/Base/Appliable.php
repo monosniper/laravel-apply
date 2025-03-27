@@ -2,15 +2,12 @@
 
 namespace KiranoDev\laravelApply\Base;
 
-use Illuminate\Database\Eloquent\Attributes\ObservedBy;
 use Illuminate\Database\Eloquent\Model;
 use KiranoDev\LaravelApply\Contracts\CanBeApply;
 use KiranoDev\laravelApply\DataTransferObjects\ApplyData;
 use KiranoDev\LaravelApply\Enums\Via;
 use KiranoDev\LaravelApply\Helpers\Formatter;
-use KiranoDev\LaravelApply\Observers\ApplyObserver;
 
-#[ObservedBy(ApplyObserver::class)]
 class Appliable extends Model implements CanBeApply
 {
     public function getApplyData(): ApplyData
