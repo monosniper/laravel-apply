@@ -16,11 +16,11 @@ class LaravelApplyServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__.'/../lang', 'apply');
 
         $this->publishes([
-            __DIR__.'/../config/payment.php' => config_path('payment.php'),
+            __DIR__.'/../config/apply.php' => config_path('apply.php'),
         ]);
 
         $this->mergeConfigFrom(
-            __DIR__.'/../config/payment.php', 'payment'
+            __DIR__.'/../config/apply.php', 'apply'
         );
 
         if ( ! defined('CURL_SSLVERSION_TLSv1_2')) { define('CURL_SSLVERSION_TLSv1_2', 6); }
