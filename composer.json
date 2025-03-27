@@ -1,0 +1,26 @@
+{
+    "name": "kirano-dev/laravel-apply",
+    "description": "Send applies via Telegram, Mail",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "KiranoDev\\LaravelApply\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kirano-dev",
+            "email": "developer@kirano.uz"
+        }
+    ],
+    "require-dev": {
+        "laravel/framework": "^11.30"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KiranoDev\\LaravelApply\\Providers\\LaravelApplyServiceProvider"
+            ]
+        }
+    }
+}
