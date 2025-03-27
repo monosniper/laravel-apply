@@ -1,6 +1,6 @@
 <?php
 
-namespace KiranoDev\laravelApply\DataTransferObjects;
+namespace KiranoDev\LaravelApply\DataTransferObjects;
 
 use KiranoDev\LaravelApply\Enums\Via;
 

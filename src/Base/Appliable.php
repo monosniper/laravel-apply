@@ -1,10 +1,10 @@
 <?php
 
-namespace KiranoDev\laravelApply\Base;
+namespace KiranoDev\LaravelApply\Base;
 
 use Illuminate\Database\Eloquent\Model;
 use KiranoDev\LaravelApply\Contracts\CanBeApply;
-use KiranoDev\laravelApply\DataTransferObjects\ApplyData;
+use KiranoDev\LaravelApply\DataTransferObjects\ApplyData;
 use KiranoDev\LaravelApply\Enums\Via;
 use KiranoDev\LaravelApply\Helpers\Formatter;
 use KiranoDev\LaravelApply\Services\Social\Log;

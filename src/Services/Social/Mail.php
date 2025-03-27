@@ -4,7 +4,7 @@ namespace KiranoDev\LaravelApply\Services\Social;
 
 use KiranoDev\LaravelApply\Contracts\ApplySender;
 use KiranoDev\LaravelApply\Contracts\CanBeApply;
-use KiranoDev\laravelApply\DataTransferObjects\Providers\MailProvider;
+use KiranoDev\LaravelApply\DataTransferObjects\Providers\MailProvider;
 use Illuminate\Support\Facades\Mail as MailFacade;
 
 class Mail implements ApplySender

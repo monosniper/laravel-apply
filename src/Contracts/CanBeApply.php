@@ -2,7 +2,7 @@
 
 namespace KiranoDev\LaravelApply\Contracts;
 
-use KiranoDev\laravelApply\DataTransferObjects\ApplyData;
+use KiranoDev\LaravelApply\DataTransferObjects\ApplyData;
 use KiranoDev\LaravelApply\Enums\Via;
 
 interface CanBeApply

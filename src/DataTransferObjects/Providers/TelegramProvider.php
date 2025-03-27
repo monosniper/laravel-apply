@@ -1,8 +1,8 @@
 <?php
 
-namespace KiranoDev\laravelApply\DataTransferObjects\Providers;
+namespace KiranoDev\LaravelApply\DataTransferObjects\Providers;
 
-use KiranoDev\laravelApply\DataTransferObjects\ApplyProvider;
+use KiranoDev\LaravelApply\DataTransferObjects\ApplyProvider;
 use KiranoDev\LaravelApply\Enums\Via;
 
 class TelegramProvider extends ApplyProvider

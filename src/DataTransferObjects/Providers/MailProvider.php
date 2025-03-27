@@ -1,9 +1,9 @@
 <?php
 
-namespace KiranoDev\laravelApply\DataTransferObjects\Providers;
+namespace KiranoDev\LaravelApply\DataTransferObjects\Providers;
 
 use Illuminate\Mail\Mailable;
-use KiranoDev\laravelApply\DataTransferObjects\ApplyProvider;
+use KiranoDev\LaravelApply\DataTransferObjects\ApplyProvider;
 
 class MailProvider extends ApplyProvider
 {
