@@ -8,5 +8,6 @@ use KiranoDev\LaravelApply\Enums\Via;
 interface CanBeApply
 {
     public function getApplyData(): ApplyData;
-    public function via(): Via;
+    public function applyVia(): Via;
+    public function skipApply(): bool;
 }

@@ -1,8 +1,7 @@
 <?php
 
-namespace KiranoDev\LaravelApply\Base;
+namespace KiranoDev\LaravelApply\Traits;
 
-use Illuminate\Database\Eloquent\Model;
 use KiranoDev\LaravelApply\Contracts\CanBeApply;
 use KiranoDev\LaravelApply\DataTransferObjects\ApplyData;
 use KiranoDev\LaravelApply\Enums\Via;
@@ -11,17 +10,24 @@ use KiranoDev\LaravelApply\Services\Social\Log;
 use KiranoDev\LaravelApply\Services\Social\Mail;
 use KiranoDev\LaravelApply\Services\Social\Telegram;
 
-class Appliable extends Model implements CanBeApply
+trait Appliable
 {
-    protected static function booted(): void
+    protected static function bootAppliable(): void
     {
-        static::created(function (Appliable $appliable) {
-            (match($appliable->via()) {
-                Via::TELEGRAM => Telegram::class,
-                Via::MAIL => Mail::class,
-                Via::LOG => Log::class,
-            })::send($appliable);
+        static::created(function (CanBeApply $appliable) {
+            if(!$appliable->skipApply()) {
+                (match($appliable->applyVia()) {
+                    Via::TELEGRAM => Telegram::class,
+                    Via::MAIL => Mail::class,
+                    Via::LOG => Log::class,
+                })::send($appliable);
+            }
         });
+    }
+
+    protected function skipApply(): bool
+    {
+        return false;
     }
 
     public function getApplyData(): ApplyData
@@ -35,7 +41,7 @@ class Appliable extends Model implements CanBeApply
         );
     }
 
-    public function via(): Via
+    public function applyVia(): Via
     {
         return Via::TELEGRAM;
     }

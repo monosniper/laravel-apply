@@ -7,9 +7,9 @@ use KiranoDev\LaravelApply\DataTransferObjects\Providers\TelegramProvider;
 class ApplyData
 {
     public function __construct(
-        public ?ApplyProvider $provider = null,
-        public array $data = [],
         public ?string $title = null,
+        public array $data = [],
+        public ?ApplyProvider $provider = null,
     ) {
         if(!$this->provider) {
             $this->provider = new TelegramProvider();
