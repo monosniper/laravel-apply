@@ -1,14 +1,14 @@
 <?php
 
-namespace KiranoDev\LaravelApply\Traits;
+namespace Monosniper\LaravelApply\Traits;
 
-use KiranoDev\LaravelApply\Contracts\CanBeApply;
-use KiranoDev\LaravelApply\DataTransferObjects\ApplyData;
-use KiranoDev\LaravelApply\Enums\Via;
-use KiranoDev\LaravelApply\Helpers\Formatter;
-use KiranoDev\LaravelApply\Services\Social\Log;
-use KiranoDev\LaravelApply\Services\Social\Mail;
-use KiranoDev\LaravelApply\Services\Social\Telegram;
+use Monosniper\LaravelApply\Contracts\CanBeApply;
+use Monosniper\LaravelApply\DataTransferObjects\ApplyData;
+use Monosniper\LaravelApply\Enums\Via;
+use Monosniper\LaravelApply\Helpers\Formatter;
+use Monosniper\LaravelApply\Services\Social\Log;
+use Monosniper\LaravelApply\Services\Social\Mail;
+use Monosniper\LaravelApply\Services\Social\Telegram;
 
 trait Appliable
 {

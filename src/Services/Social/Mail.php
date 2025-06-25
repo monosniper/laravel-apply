@@ -1,10 +1,10 @@
 <?php
 
-namespace KiranoDev\LaravelApply\Services\Social;
+namespace Monosniper\LaravelApply\Services\Social;
 
-use KiranoDev\LaravelApply\Contracts\ApplySender;
-use KiranoDev\LaravelApply\Contracts\CanBeApply;
-use KiranoDev\LaravelApply\DataTransferObjects\Providers\MailProvider;
+use Monosniper\LaravelApply\Contracts\ApplySender;
+use Monosniper\LaravelApply\Contracts\CanBeApply;
+use Monosniper\LaravelApply\DataTransferObjects\Providers\MailProvider;
 use Illuminate\Support\Facades\Mail as MailFacade;
 
 class Mail implements ApplySender

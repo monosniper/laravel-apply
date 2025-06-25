@@ -1,6 +1,6 @@
 <?php
 
-namespace KiranoDev\LaravelApply\Helpers;
+namespace Monosniper\LaravelApply\Helpers;
 
 class Formatter
 {

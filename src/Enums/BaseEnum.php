@@ -1,6 +1,6 @@
 <?php
 
-namespace KiranoDev\LaravelApply\Enums;
+namespace Monosniper\LaravelApply\Enums;
 
 trait BaseEnum
 {

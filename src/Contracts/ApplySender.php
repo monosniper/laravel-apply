@@ -1,6 +1,6 @@
 <?php
 
-namespace KiranoDev\LaravelApply\Contracts;
+namespace Monosniper\LaravelApply\Contracts;
 
 interface ApplySender
 {

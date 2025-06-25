@@ -1,6 +1,6 @@
 <?php
 
-namespace KiranoDev\LaravelApply\Providers;
+namespace Monosniper\LaravelApply\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

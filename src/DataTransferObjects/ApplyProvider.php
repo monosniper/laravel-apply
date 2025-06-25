@@ -1,8 +1,8 @@
 <?php
 
-namespace KiranoDev\LaravelApply\DataTransferObjects;
+namespace Monosniper\LaravelApply\DataTransferObjects;
 
-use KiranoDev\LaravelApply\Enums\Via;
+use Monosniper\LaravelApply\Enums\Via;
 
 class ApplyProvider
 {

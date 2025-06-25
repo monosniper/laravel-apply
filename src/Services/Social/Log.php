@@ -1,9 +1,9 @@
 <?php
 
-namespace KiranoDev\LaravelApply\Services\Social;
+namespace Monosniper\LaravelApply\Services\Social;
 
-use KiranoDev\LaravelApply\Contracts\ApplySender;
-use KiranoDev\LaravelApply\Contracts\CanBeApply;
+use Monosniper\LaravelApply\Contracts\ApplySender;
+use Monosniper\LaravelApply\Contracts\CanBeApply;
 
 class Log implements ApplySender
 {

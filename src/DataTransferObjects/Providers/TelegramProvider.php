@@ -1,9 +1,9 @@
 <?php
 
-namespace KiranoDev\LaravelApply\DataTransferObjects\Providers;
+namespace Monosniper\LaravelApply\DataTransferObjects\Providers;
 
-use KiranoDev\LaravelApply\DataTransferObjects\ApplyProvider;
-use KiranoDev\LaravelApply\Enums\Via;
+use Monosniper\LaravelApply\DataTransferObjects\ApplyProvider;
+use Monosniper\LaravelApply\Enums\Via;
 
 class TelegramProvider extends ApplyProvider
 {

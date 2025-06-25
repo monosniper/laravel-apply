@@ -1,9 +1,9 @@
 <?php
 
-namespace KiranoDev\LaravelApply\Contracts;
+namespace Monosniper\LaravelApply\Contracts;
 
-use KiranoDev\LaravelApply\DataTransferObjects\ApplyData;
-use KiranoDev\LaravelApply\Enums\Via;
+use Monosniper\LaravelApply\DataTransferObjects\ApplyData;
+use Monosniper\LaravelApply\Enums\Via;
 
 interface CanBeApply
 {

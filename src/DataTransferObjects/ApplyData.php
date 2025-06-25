@@ -1,8 +1,8 @@
 <?php
 
-namespace KiranoDev\LaravelApply\DataTransferObjects;
+namespace Monosniper\LaravelApply\DataTransferObjects;
 
-use KiranoDev\LaravelApply\DataTransferObjects\Providers\TelegramProvider;
+use Monosniper\LaravelApply\DataTransferObjects\Providers\TelegramProvider;
 
 class ApplyData
 {

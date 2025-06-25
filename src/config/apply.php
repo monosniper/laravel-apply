@@ -1,6 +1,6 @@
 <?php
 
-use KiranoDev\LaravelApply\Enums\Via;
+use Monosniper\LaravelApply\Enums\Via;
 
 return [
     'fallback' => [

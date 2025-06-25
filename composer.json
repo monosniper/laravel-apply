@@ -1,16 +1,16 @@
 {
-    "name": "kirano-dev/laravel-apply",
+    "name": "monosniper/laravel-apply",
     "description": "Send applies via Telegram, Mail",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "KiranoDev\\LaravelApply\\": "src/"
+            "Monosniper\\LaravelApply\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "kirano-dev",
-            "email": "developer@kirano.uz"
+            "name": "monosniper",
+            "email": "ravilto@vk.com"
         }
     ],
     "require-dev": {
@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "KiranoDev\\LaravelApply\\Providers\\LaravelApplyServiceProvider"
+                "Monosniper\\LaravelApply\\Providers\\LaravelApplyServiceProvider"
             ]
         }
     }
