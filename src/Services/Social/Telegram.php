@@ -19,7 +19,7 @@ class Telegram implements ApplySender
         $provider = $data->provider;
 
         $token = $provider->bot_token;
-        $chatId = $provider->chat_id;
+        $chatIds = $provider->chat_ids;
 
         $message = "";
 
@@ -34,10 +34,12 @@ class Telegram implements ApplySender
             $message .= $value === self::NEXT_LINE ? "\n" : "<b>" . $key . ":</b> " . $value . "\n";
         }
 
-        $url = "https://api.telegram.org/bot$token/sendMessage?chat_id=$chatId&parse_mode=HTML&text=" . $message;
+        $url = fn ($chatId) => "https://api.telegram.org/bot$token/sendMessage?chat_id=$chatId&parse_mode=HTML&text=" . $message;
 
         try {
-            Http::get($url);
+            foreach ($chatIds as $chatId) {
+                Http::get($url($chatId));
+            }
         } catch (\Exception $e) {
             info('Apply Failed: ' .$e->getMessage());
         }
