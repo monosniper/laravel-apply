@@ -31,7 +31,7 @@ trait Appliable
 
     public function send(): void
     {
-        foreach ($this->getApplyData()->provider->receivers as $receiver) {
+        foreach ($this->getApplyData(auth()->user())->provider->receivers as $receiver) {
             if($this->skipApply($receiver)) continue;
 
             $this->sendTo($receiver);
