@@ -5,7 +5,7 @@ use Monosniper\LaravelApply\Enums\Via;
 return [
     'fallback' => [
         Via::TELEGRAM->value => [
-            'chat_id' => '',
+            'receivers' => [],
             'bot_token' => '',
         ],
     ],

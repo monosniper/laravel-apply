@@ -9,5 +9,6 @@ interface CanBeApply
 {
     public function getApplyData(): ApplyData;
     public function applyVia(): Via;
-    public function skipApply(): bool;
+    public function skipApply(mixed $candidate): bool;
+    public function send(): void;
 }
